@@ -1,10 +1,11 @@
 import React from 'react';
 import Makers from '../data.js';
 import { withRouter } from 'react-router-dom';
-import ContactContainer from './ContactContainer.js';
-
+import Navbar from '../components/Navbar';
+import ContactForm from '../components/ContactForm';
 
 class Profile extends React.Component {
+
   findMaker(makerId) {
     return Makers.find(maker => makerId === maker.id)
   }
@@ -12,11 +13,11 @@ class Profile extends React.Component {
   render() {
     const makerId = this.props.match.params.id
     const maker = this.findMaker(makerId);
-    console.log(maker);
     return(
-      <div className="page-container">
+      <div>
+        <Navbar />
         <div className="profile-container">
-          <img className="profile-img" alt="profile-maker" src={`/images/${maker.img}`} />
+          <img className="profile-img" src={`/images/${maker.img}`} alt="Imagen de Perfil"/>
           <div className="profile-info">
             <h1 className="profile-name">{maker.name}</h1>
             <p className="profile-message">{maker.mensaje}</p>
@@ -31,16 +32,13 @@ class Profile extends React.Component {
             </ul>
             <p><strong>Datos de Contacto:</strong></p>
             <ul className="profile-list">
-              <li className="profile-contacto">{maker.email}</li>
-              <li className="profile-contacto">{maker.celular}</li>
+              <li className="profile-contacto">Correo electrónico: {maker.email}</li>
+              <li className="profile-contacto">Celular: {maker.celular}</li>
             </ul>
           </div>
-          
         </div>
-        {/*<ContactContainer />*/}
-        
+        <ContactForm maker={maker}/>
       </div>
-      
     );
   }
 }
