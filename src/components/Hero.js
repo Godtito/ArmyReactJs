@@ -7,11 +7,10 @@ const Hero = () => (
 		</Link> 	
 	  	
 	  <section id="section01" class="demo">
- 			 <a href="#section02"><i className="fas fa-chevron-down"></i></a>
+ 			 <a href="#makers"><i className="fas fa-chevron-down"></i></a>
 		</section>
 
    </div>
 )
-// When the user scrolls down 20px from the top of the document, show the button
 
 export default Hero;

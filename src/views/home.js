@@ -8,7 +8,7 @@ class Home extends React.Component {
     return(
       <div>
         <Hero />
-        <section id="section02" class="demo">
+        <section id="makers">
         	<MainContainer />
         </section>
       </div>
