@@ -17,14 +17,14 @@ li {
 
 /*Header*/
 .logo {
-  max-width: 50%;
+  max-width: 75%;
   height: auto;
-  padding-top: 40px;
+  padding-top: 20vh;
   margin: 0;
 }
 
 .fa-chevron-down {
-  margin-top: 15%;
+  margin-top: 10%;
   font-size: 30pt;
   display: block;
 }
