@@ -179,7 +179,7 @@ const makers = [
     abilities: [2, 4]
   },
   {
-    id: "13",
+    id: "12",
     name: "Juan Antonio Peña Cortez",
     img: "IMG_2021.jpg",
     email: "A00515814@itesm.mx",

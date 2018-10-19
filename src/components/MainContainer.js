@@ -7,6 +7,11 @@ class MainContainer extends React.Component {
   render() {
     return(
       <div className="container">
+        <h1 className="makers-title"> Lieutenant</h1>
+        <div className="solo-container">
+          <img className="maker-img" src="./images/IMG_2013.jpg" alt="Imagen de Perfil de Teniente"/>
+          <h3 className="maker-name">Alejandra Díaz de León Lastras</h3>
+        </div>
         <h1 className="makers-title"> The Makers</h1>
         <div className="grid-container">
           {

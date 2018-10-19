@@ -58,6 +58,9 @@ li {
     padding: 0;
   }
 }
+.solo-container{
+  text-align: center;
+}
 
 .grid-container {
   width: 75%;
