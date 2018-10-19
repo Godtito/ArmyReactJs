@@ -24,7 +24,7 @@ li {
 }
 
 .fa-chevron-down {
-  margin: 15% 0;
+  margin: 10% 0;
   font-size: 30pt;
   display: block;
 }
@@ -239,3 +239,5 @@ footer{
   text-align: center;
   margin:0 auto;
 }
+
+
